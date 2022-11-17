@@ -1,0 +1,58 @@
+//Algorithm: Make coffee
+
+// Tasks:
+// Ask if Coni wants coffee
+// Boil water
+// Weight grains
+// Grind grains
+// Put ground coffee in the french press
+// Pour hot water over the french press
+// Wait 4 minutes
+// Serve coffee on cups
+
+//Pattern recognition:
+// Coni always drinks less coffee than Matías
+// Coni always use the small cup
+// Matías always use the large cup
+// If Coni wants coffee, weight 25 grams of coffee beans
+// If Coni doesn't want coffee, weight 18 grams of coffee beans
+// Always boil 1 lt of water
+// Always grind coffee
+// Always put ground coffee into the french press
+// If Coni wants coffee, pour 750 ml of boiled water into the french press
+// If Coni doesn't want coffee, pour 450 ml of boiled water into the french press
+// Always wait for 4 minutes for the coffee to infuse
+// Always pour 450 ml of coffee into the large cup
+// If Coni wants coffee, pour 300 ml into coffee on the small cup
+
+// Abstraction:
+// None?
+
+//Sequence: 
+//  1. Event 1: Boil water.
+//  2. Event 2: Weigh coffee beans.
+//  Conditional: If (Coni wants coffee) { 
+//					Weigh 25g of coffee beans 
+//					} else { 
+//					Weigh 18g of coffee beans 
+//					} 
+//  3. Event 3: Grind coffee.
+//  4. Event 4: Put ground coffee into the french press.
+//  5 Event 5: Pour boiled water into the french press.
+//  Conditional: If (Coni wants coffee) {
+//                  Pour 750 ml of boiled water
+//                  } else {
+//                  Pour 450 ml of boiled water
+//                  }
+//  6. Event 6: Wait.
+//	Loop: for (each 1 to 4 minutes) {
+//				wait 1 minute 
+//				} 
+//  7. Event 7: Take large cup
+//  Conditional: If (Coni wants coffee) { 
+//					Take also small cup
+//					} 
+//	8. Event 8: Fill the cup with coffee
+//	Loop: for (each empty cup) {
+//			    fill the cup with coffee 
+//				} 
